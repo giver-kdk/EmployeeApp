@@ -29,7 +29,6 @@
         "commandName": "Docker",
         "launchBrowser": true,
         "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
-        //"launchUrl": "railway://monorail.proxy.rlwy.net:31714",
         "environmentVariables": {
             "ASPNETCORE_HTTPS_PORTS": "8081",
             "ASPNETCORE_HTTP_PORTS": "8080"
