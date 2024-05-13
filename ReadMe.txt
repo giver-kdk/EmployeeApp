@@ -1,0 +1,9 @@
+- Cloud Database Setup: 
+  - SignUp to freeasphosting.com
+  - Create a cloud database in it
+  - Generate db generator script for 2016 version from the desired database in SSMS
+  - Create a new localdb server with command: sqllocaldb create server_name
+  - Run the db generator script in the local db server 
+  - Create .bat file from the generated database
+  - Upload .bat format database backup file to the freeasphosting.com
+  - Import the dump (.bat file) for the cloud database 
