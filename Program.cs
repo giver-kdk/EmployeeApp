@@ -2,7 +2,9 @@ using Microsoft.EntityFrameworkCore;
 using WebApp5ByGiver.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-var myConStr = builder.Configuration.GetConnectionString("myConStr");
+// var myConStr = builder.Configuration.GetConnectionString("clzConStr");
+// var myConStr = builder.Configuration.GetConnectionString("devConStr");
+var myConStr = builder.Configuration.GetConnectionString("prodConStr");
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
