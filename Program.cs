@@ -2,15 +2,12 @@ using Microsoft.EntityFrameworkCore;
 using WebApp5ByGiver.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-// var myConStr = builder.Configuration.GetConnectionString("clzConStr");
-// var myConStr = builder.Configuration.GetConnectionString("devConStr");
-var myConStr = builder.Configuration.GetConnectionString("cockroachConStr");
-//var myConStr = builder.Configuration.GetConnectionString("prodConStr");
+var prodConStr = builder.Configuration.GetConnectionString("myConStr");
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<DbFirstContext>(options => options.UseSqlServer(myConStr));
+builder.Services.AddDbContext<DbFirstContext>(options => options.UseSqlServer(prodConStr));
 
 var app = builder.Build();
 
